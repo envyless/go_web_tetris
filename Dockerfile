@@ -1,6 +1,7 @@
 FROM golang:1.15-alpine
 
 #use git
+RUN apk add build-base
 RUN apk add --update git
 
 RUN mkdir /hello
